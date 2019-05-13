@@ -116,7 +116,7 @@ section{
 }
 .section04 .inner .flex .play-thumb strong{
     font-size:1.2em;
-    padding:10px 0 20px 0;
+    padding:20px 0 30px 0;
     font-weight: 400 !important;
 }
 .section04 .inner .flex .play-thumb p{
@@ -156,7 +156,7 @@ footer{
 footer .inner{
     padding:120px 40px;
     color:#fff;
-    font-size:1.4em;
+    font-size:1.2em;
 }
 footer .inner .flex{
     display: flex;
@@ -189,7 +189,7 @@ footer .send-box textarea{
     display: block;
     width:100%;
     margin-bottom:30px;
-    font-size:18px;
+    font-size:1.5em;
     font-weight: 100;
 }
 footer .send-box input::placeholder,
