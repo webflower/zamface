@@ -35,11 +35,11 @@ header .inner{
     color:#000;
     font-size:3em;
     line-height:1.5em;
-    font-weight: lighter;
+    font-weight: 300;
 }
 .text-box strong{
     display: block;
-    font-weight: normal;
+    font-weight: 600;
 }
 /*================
     container
@@ -168,7 +168,7 @@ footer .inner .flex > div{
 }
 footer .desc-box{
     margin-top:40px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 1.8em;
     margin-bottom:100px;
 }
