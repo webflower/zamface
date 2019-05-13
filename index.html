@@ -118,7 +118,12 @@
                     </div>
                     <!--company-box-->
                     <div class="contact-box">
-                        <span>제휴문의<i class="fas fa-chevron-up contact-open"></i></span>
+                        <span class="contact-title">제휴문의&nbsp;<i class="fas fa-chevron-down contact-open"></i>
+                            <ul class="contact-hidden--box">
+                                <li><a href="javascript:;">서비스 의견</a></li>
+                                <li><a href="javascript:;">크리에이어 관련 문의</a></li>
+                            </ul>
+                        </span>
                         <div class="send-box">
                             <input type="text" placeholder="제목">
                             <input type="email" placeholder="이메일">
@@ -146,6 +151,14 @@
                 scrollTop : $("#footer").offset().top
             }, 500, 'swing');
 
+        })
+
+        $(".contact-title").click(function(){
+            $(".fa-chevron-down").toggleClass("fa-chevron-up");
+            $(".contact-hidden--box").stop().slideToggle();
+            $(".contact-hidden--box li").click(function(){
+                $(".contact-hidden--box").stop().slideUp();
+            })
         })
     </script>
 </body>

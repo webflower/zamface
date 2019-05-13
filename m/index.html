@@ -171,8 +171,12 @@
                     <div class="contact-box">
                         <span class="contact-title fw400">
 							제휴문의
-							<i class="fas fa-chevron-up contact-open"></i>
-							<i class="fas fa-chevron-down contact-close"></i>
+							<i class="fas fa-chevron-down contact-open"></i>
+							<i class="fas fa-chevron-up contact-close"></i>
+							<ul class="contact-hidden--box">
+                                <li><a href="javascript:;">서비스 의견</a></li>
+                                <li><a href="javascript:;">크리에이어 관련 문의</a></li>
+                            </ul>
 						</span>
                         <div id="contact-wrap">
 							<div class="send-box">
@@ -230,7 +234,7 @@
 		  
         $(".header-nav").click(function(){
             var body=$("html,body");
-			toggleContactBox(true, 0);
+			//toggleContactBox(true, 0);
 			
             body.stop().animate({
                 scrollTop : $("#contact-wrap").offset().top
@@ -239,13 +243,19 @@
         });
 		
 		$(".contact-title").click(function() {
-			if($("#contact-wrap").is(":visible")) {
+			/*if($("#contact-wrap").is(":visible")) {
 				toggleContactBox(false);
 			} else {
 				toggleContactBox(true);
-			}
+			}*/
+			$(".fa-chevron-down").toggleClass("fa-chevron-up");
+            $(".contact-hidden--box").stop().slideToggle();
+            $(".contact-hidden--box li").click(function(){
+                $(".contact-hidden--box").stop().slideUp();
+            })
 		});
 		
+		/*
 		function toggleContactBox(isOpen, time = 500) {
 			var wrap = $("#contact-wrap");
 			
@@ -262,7 +272,9 @@
 				if(time == 0) wrap.hide();
 				else $("#contact-wrap").slideUp(time);
 			}
+			
 		}
+		*/
     </script>
 </body>
 </html>
