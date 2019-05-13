@@ -68,7 +68,7 @@ td {
     vertical-align: baseline;
     background: transparent;
     -webkit-text-size-adjust: none;
-    font-family: 'Noto Sans KR','NotoSans';
+    font-family: 'Noto Sans KR',sans-serif,'NotoSans';
     list-style: none;
 }
 
