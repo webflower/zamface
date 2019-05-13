@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-@font-face{
+/*@font-face{
     font-family: 'NotoSans';
     src: local('NotoSans'),
         url("../font/NotoSansCJKkr-Bold.otf") format('opentype');
@@ -21,4 +21,4 @@
         url("../font/NotoSansCJKkr-Light.otf") format('opentype');
     font-weight: 100;
     font-style:normal;
-}
+}*/
