@@ -19,7 +19,7 @@ header{
 header .inner{
     padding:25px 40px;
     background:#cf2a37;
-    font-size:17px;
+    font-size:1em;
 }
 .logo{
     display:inline-block;
@@ -33,7 +33,7 @@ header .inner{
 ==================*/
 .text-box{
     color:#000;
-    font-size:54px;
+    font-size:3em;
     line-height:1.5em;
     font-weight: lighter;
 }
@@ -115,15 +115,15 @@ section{
     color:#666;
 }
 .section04 .inner .flex .play-thumb strong{
-    font-size:18px;
+    font-size:1.2em;
     padding:10px 0 20px 0;
     font-weight: 400 !important;
 }
 .section04 .inner .flex .play-thumb p{
-    font-size:16px;
+    font-size:1.2em;
 }
 .section04 .inner .flex .sub-title{
-    font-size:20px;
+    font-size:1.5em;
     padding-bottom:10px;
     display: block;
 }
@@ -156,7 +156,7 @@ footer{
 footer .inner{
     padding:120px 40px;
     color:#fff;
-    font-size:18px;
+    font-size:1.4em;
 }
 footer .inner .flex{
     display: flex;
