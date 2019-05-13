@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+/* CSS reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-text-size-adjust: none;
+    font-family: 'Noto Sans KR','NotoSans';
+    list-style: none;
+}
+
+em,
+address {
+    font-style: normal;
+}
+
+hr {
+    display: none
+}
+
+body {
+    line-height: 1;
+    word-break: break-all;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    word-break: break-all;
+}
+
+table th,
+table td {
+    vertical-align: middle;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+legend,
+caption,
+.skip {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+caption {
+    position: static;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img,
+input {
+    vertical-align: middle;
+}
+
+label {
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+select {
+    height: 24px;
+    margin: 0;
+    border: 1px solid #dcdcdc;
+    padding: 0;
+    font-size: 13px;
+    vertical-align: middle;
+    color: #000;
+}
+
+textarea {
+    border: 1px solid #dcdcdc;
+    color: #888;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 5px;
+    overflow-y: auto;
+    resize: none;
+}
+/* html5 reset */
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+details,
+menu,
+figure,
+figcaption,
+canvas {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+/*JYP*/
+input {
+    vertical-align: middle;
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+.ml20 {
+    margin-left: 20px !important;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+
+.mb100 {
+    margin-bottom: 100px !important;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.mt30 {
+    margin-top: 30px !important;
+}
+
+.mt50 {
+    margin-top: 50px !important;
+}
+
+.vtc-top {
+    vertical-align: top !important;
+}
+
+.vtc-middle {
+    vertical-align: middle !important;
+}
+
+.vtc-bottom {
+    vertical-align: bottom !important;
+}
+
+/*width*/
+.w50p {
+    width: 50% !important;
+}
+
+.w80p {
+    width: 80% !important;
+}
+
+.screen-out,
+legend,
+.accessibility {
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -9999em;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.skip-nav {
+    position: relative;
+    z-index: 9999;
+}
+
+.skip-nav a {
+    display: block;
+    height: 1px;
+    width: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+/*position*/
+.relative {
+    position: relative !important;
+}
+
+/*text-align*/
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+/*display*/
+.dpb {
+    display: block !important;
+}
+
+.dpib {
+    display: inline-block !important;
+}
+
+.dpi {
+    display: inline !important;
+}
+
+.fw400 {
+	font-weight:400 !important;
+}

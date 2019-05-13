@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zamface</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/j_reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.browser.mobile.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="inner clearfix">
+                <h1 class="logo">
+                    <a href="javascript:;">
+                        <img src="images/logo.png" alt="zamface">
+                    </a>
+                </h1>
+                <a href="#footer" class="header-nav">회사소개 / 제휴문의</a>
+            </div>
+        </header>
+        <div class="container">
+            <section class="section01">
+                <div class="inner">
+                    <div class="text-box">
+                        모든 뷰튜버의 메이크업을
+                        <strong>잼페이스에서 한번에!</strong>
+                    </div>
+                    <!--text-box-->
+                    <div class="button-box">
+                        <a href="javascript:;" class="btn btn-google"><img src="images/btn_googleplay.png" alt="Google Play"></a>
+                        <a href="javascript:;" class="btn btn-appstore"><img src="images/btn_appstore.png" alt="Appstore"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="section02">
+                <div class="inner"></div>
+            </section>
+            <section class="section03">
+                <div class="inner">
+                    <div class="text-box text-center">
+                        <strong>보고싶은 부분 메이크업</strong>
+                        골라보고, 다시보고, 계속보고
+                    </div>
+                </div>
+            </section>
+            <section class="section04">
+                <div class="inner">
+                    <div class="flex">
+                        <div>
+                            <div class="text-box">
+                                <p>뷰튜버가 사용한</p> 
+                                <strong>화장품을 바로 확인</strong>
+                            </div>
+                            <div class="play-thumb clearfix">
+                                <img src="images/play_thumb.jpg" alt="재생">
+                                <div class="desc">
+                                    <span>뷰투버 클로이</span>
+                                    <strong>잼페이스 데일리 메이크업</strong>
+                                    <p>잼페이스로 출근길 메이크업<br>클로이와 함께해요!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="sub-title">이 영상에 사용한 제품</span>
+                            <div class="thumb-box">
+                                <div>
+                                    <img src="images/slide_thumb01.jpg" alt="잼페이스 립스틱">
+                                </div>
+                                <div>
+                                    <img src="images/slide_thumb02.jpg" alt="잼페이스 블러셔">
+                                </div>
+                                <div>
+                                    <img src="images/slide_thumb03.jpg" alt="잼페이스 미스트">
+                                </div>
+                                <div>
+                                    <img src="images/slide_thumb04.jpg" alt="잼페이스 블러셔">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="section05">
+                <div class="inner">
+                    <div class="text-box">
+                        <p>좋아하는 영상,</p> 
+                        <p>화장품을</p> 
+                        <strong>마이 파우치에 담아</strong>
+                        <strong>언제든 확인</strong>
+                    </div>
+                </div>
+            </section>
+        </div>    
+        <footer id="footer">
+            <div class="inner">
+                <div class="flex">
+                    <div class="company-box">
+                        <span>회사소개</span>
+                        <div class="desc-box">
+                            재미있는 일을 하고 싶은 사람들이 모여, <br>
+                            세상을 바꾸는 작당모의를 시작했습니다.<br>
+                            작당모의의 첫번째 프로젝트 잼페이스, <br>
+                            쉽고 재미있게 메이크업을 즐기는 서비스입니다.<br>
+                            잼페이스에 보내고 싶은 의견, 혹은 제휴 요청 등을 <br>
+                            마음껏 보내 주세요. <br>
+                            꼭 검토하고 답변 드리겠습니다. 
+                        </div>
+                        <address>(주)작당모의&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;대표&nbsp;&nbsp;윤정하&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;사업자번호 222-86-01277</address>
+                        <address>서울시 중구 동호로 208 남산랩페이스북 5층&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;admin@zamface.co.kr</address>
+                    </div>
+                    <!--company-box-->
+                    <div class="contact-box">
+                        <span>제휴문의</span>
+                        <div class="send-box">
+                            <input type="text" placeholder="제목">
+                            <input type="email" placeholder="이메일">
+                            <textarea name="sendText" id="sendText" cols="30" rows="7"></textarea>
+                        </div>
+                        <div class="button-box">
+                            <a href="javascript:;">리캡챠</a>
+                            <a href="javascript:;">확인</a>
+                        </div>
+                    </div>
+                    <!--contact-box-->
+                </div>
+            </div>
+        </footer>    
+    </div>
+    <script>
+		if($.browser.mobile == true) {
+			location.href = "m/index.html";
+		}
+		
+        $(".header-nav").click(function(){
+
+            var body=$("html,body");
+            body.stop().animate({
+                scrollTop : $("#footer").offset().top
+            }, 500, 'swing');
+
+        })
+    </script>
+</body>
+</html>

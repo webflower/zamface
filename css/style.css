@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+}
+.wrap{
+    width:100%;
+    height:auto;
+    position: relative;
+    z-index: 10;
+}
+.inner{
+    width:1280px;
+    margin:0 auto;
+    position: relative;
+    z-index: 10;
+}
+header{
+    background:#cf2a37;
+}
+header .inner{
+    padding:25px 40px;
+    background:#cf2a37;
+    font-size:17px;
+}
+.logo{
+    display:inline-block;
+}
+.header-nav{
+    float: right;
+    color:#fff;
+}
+/*================
+    common
+==================*/
+.text-box{
+    color:#000;
+    font-size:54px;
+    line-height:1.5em;
+    font-weight: lighter;
+}
+.text-box strong{
+    display: block;
+    font-weight: normal;
+}
+/*================
+    container
+==================*/
+section{
+    min-width: 1280px;
+}
+.section01{
+    background:#cf2a37;
+}
+.section01 .inner{
+    background:url("../images/section01.jpg") no-repeat center center;
+    height:830px;
+    padding:160px 40px;
+}
+.section01 .inner .text-box{
+    color:#fff;
+}
+.section01 .inner .button-box{
+    margin-top:60px;
+}
+.section01 .inner .button-box .btn-google{
+    margin-right:20px;
+}
+.section02{
+    background: url("../images/section02.jpg") no-repeat center center;
+}
+.section02 .inner{
+    /* background:url("../images/section02.jpg") no-repeat center center; */
+    height:900px;
+}
+.section03{
+    background:#f2f2f2;
+}
+.section03 .inner{
+    background:url("../images/section03.jpg") no-repeat center center;
+    height:900px;
+    padding:120px 0;
+}
+.section04 .inner{
+    height:900px;
+    padding:120px 40px;
+}
+.section04 .inner .flex{
+    display: flex;
+}
+.section04 .inner .flex > div{
+    flex-grow:1;
+    position: relative;
+    z-index: 10;
+}
+.section04 .inner .flex > div:nth-child(1){
+    flex: 1;
+}
+.section04 .inner .flex > div:nth-child(2){
+    flex: 1;
+}
+.section04 .inner .flex .play-thumb{
+    position: absolute;
+    bottom:0;
+}
+.section04 .inner .flex .play-thumb .desc {
+    display:inline-block;
+    vertical-align: middle;
+    margin-left:20px;
+}
+.section04 .inner .flex .play-thumb .desc > *{
+    display:block;
+    font-weight: 100;
+}
+
+.section04 .inner .flex .play-thumb span{
+    color:#666;
+}
+.section04 .inner .flex .play-thumb strong{
+    font-size:18px;
+    padding:10px 0 20px 0;
+    font-weight: 400 !important;
+}
+.section04 .inner .flex .play-thumb p{
+    font-size:16px;
+}
+.section04 .inner .flex .sub-title{
+    font-size:20px;
+    padding-bottom:10px;
+    display: block;
+}
+.section04 .inner .flex .thumb-box{
+   display: flex;
+   justify-content: space-between;
+   align-content: space-around;
+   flex-flow:row wrap;
+   align-items: flex-end;
+}
+.section04 .inner .flex .thumb-box > div{
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top:20px;
+}
+.section05{
+    background:#faedee;
+}
+.section05 .inner{
+    background:url("../images/section05.jpg") no-repeat center center;
+    height:900px;
+    padding:120px 40px;
+}
+/*==============
+    footer
+===============*/
+footer{
+    background:#222;
+}
+footer .inner{
+    padding:120px 40px;
+    color:#fff;
+    font-size:18px;
+}
+footer .inner .flex{
+    display: flex;
+}
+footer .inner .flex > div{
+    flex-grow:1;
+    position: relative;
+    z-index: 10;
+}
+footer .desc-box{
+    margin-top:60px;
+    font-weight: lighter;
+    line-height: 1.8em;
+    margin-bottom:100px;
+}
+footer address{
+    color:#888;
+    font-size:13px;
+    padding:10px 0;
+}
+footer .send-box{
+    margin-top:40px;
+}
+footer .send-box input,
+footer .send-box textarea{
+    background:#3e3e3e;
+    color:#fff;
+    border:none;
+    padding:20px;
+    display: block;
+    width:100%;
+    margin-bottom:30px;
+    font-size:18px;
+    font-weight: 100;
+}
+footer .send-box input::placeholder,
+footer .send-box textarea::placeholder{
+    color:#b2b2b2
+}
+footer .button-box a{
+    display:inline-block;
+    width:100px;
+    line-height: 50px;
+    background:#e9e9e9;
+    margin-left:13px;
+    color:#222;
+    font-size:18px;
+    text-align: center;
+}
+footer .button-box a:first-child{
+    margin-left:0;
+}
