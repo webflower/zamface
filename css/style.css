@@ -152,6 +152,8 @@ section{
 ===============*/
 footer{
     background:#222;
+    width: 100%;
+    min-width: 1280px;
 }
 footer .inner{
     padding:120px 40px;
