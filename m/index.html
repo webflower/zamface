@@ -232,8 +232,8 @@
 			});
 		});
 		  
+        var body=$("html,body");
         $(".header-nav").click(function(){
-            var body=$("html,body");
 			//toggleContactBox(true, 0);
 			
             body.stop().animate({
@@ -241,6 +241,12 @@
             }, 500, 'swing');
 
         });
+
+		$(".logo").click(function(){
+            body.stop().animate({
+                scrollTop : 0
+            }, 500, 'swing');
+        })
 		
 		$(".contact-title").click(function() {
 			/*if($("#contact-wrap").is(":visible")) {

@@ -143,15 +143,23 @@
 		if($.browser.mobile == true) {
 			location.href = "m/index.html";
 		}
-		
+
+		var body=$("html,body");
+
         $(".header-nav").click(function(){
 
-            var body=$("html,body");
             body.stop().animate({
                 scrollTop : $("#footer").offset().top
             }, 500, 'swing');
 
         })
+        
+        $(".logo").click(function(){
+            body.stop().animate({
+                scrollTop : 0
+            }, 500, 'swing');
+        })
+
 
         $(".contact-title").click(function(){
             $(".fa-chevron-down").toggleClass("fa-chevron-up");
