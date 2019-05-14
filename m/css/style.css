@@ -53,12 +53,12 @@ header .fixed_logo {
 }
 
 header.fixed {
-	background:#fff;
+	background:rgba(255,255,255,0.8);
 	width:100%;
 }
 
 header.fixed .inner {
-	background:#fff;
+	background:rgba(255,255,255,0.8);
 	width:100%;
 }
 
