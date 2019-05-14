@@ -38,7 +38,7 @@ header.fixed {
 
 header.fixed .inner {
     background: none;
-    width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
