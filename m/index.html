@@ -224,7 +224,12 @@
 				
 				if ( $( document ).scrollTop() > jbOffset2.top - header.height() ) {
 					appdownClone.addClass( 'fixed' );
-					appdownClone.css("top", header.height());
+					appdownClone.css({
+						"bottom" : "0",
+						"top" : "inherit"
+					});
+
+					$("footer").css("padding-bottom", header.height());
 				} else {
 					appdownClone.removeClass( 'fixed' );
 				}
