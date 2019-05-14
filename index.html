@@ -19,7 +19,8 @@
             <div class="inner clearfix">
                 <h1 class="logo">
                     <a href="javascript:;">
-                        <img src="images/logo.png" alt="zamface">
+                        <img src="images/logo.png" class="normal_logo" alt="zamface">
+						<img src="images/logo_fixed.png" class="fixed_logo" alt="zamface">
                     </a>
                 </h1>
                 <a href="#footer" class="header-nav">회사소개 / 제휴문의</a>
@@ -143,29 +144,45 @@
 		if($.browser.mobile == true) {
 			location.href = "m/index.html";
 		}
-
-		var body=$("html,body");
-
-        $(".header-nav").click(function(){
-
-            body.stop().animate({
-                scrollTop : $("#footer").offset().top
-            }, 500, 'swing');
-
-        })
         
-        $(".logo").click(function(){
-            body.stop().animate({
-                scrollTop : 0
-            }, 500, 'swing');
-        })
+        $(document).ready(function(){
+            var header = $( 'header' );
+            var jbOffset = header.offset();
+            $( window ).scroll( function() {
+				if ( $( document ).scrollTop() > jbOffset.top ) {
+					header.addClass( 'fixed' );
+					$("body").css("padding-top", header.height());
+				} else {
+					header.removeClass( 'fixed' );
+					$("body").css("padding-top", 0);
+				}
+				
+			});
+
+            
+            var body=$("html,body");
+            
+            $(".header-nav").click(function(){
+
+                body.stop().animate({
+                    scrollTop : $("#footer").offset().top
+                }, 500, 'swing');
+
+            })
+            
+            $(".logo").click(function(){
+                body.stop().animate({
+                    scrollTop : 0
+                }, 500, 'swing');
+            })
 
 
-        $(".contact-title").click(function(){
-            $(".fa-chevron-down").toggleClass("fa-chevron-up");
-            $(".contact-hidden--box").stop().slideToggle();
-            $(".contact-hidden--box li").click(function(){
-                $(".contact-hidden--box").stop().slideUp();
+            $(".contact-title").click(function(){
+                $(".fa-chevron-down").toggleClass("fa-chevron-up");
+                $(".contact-hidden--box").stop().slideToggle();
+                $(".contact-hidden--box li").click(function(){
+                    $(".contact-hidden--box").stop().slideUp();
+                })
             })
         })
     </script>

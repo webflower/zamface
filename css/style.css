@@ -21,6 +21,39 @@ header .inner{
     background:#cf2a37;
     font-size:1em;
 }
+header .fixed_logo {
+	display:none;
+}
+
+.fixed { 
+	position:fixed;
+	top:0;
+	z-index:999;
+}
+
+header.fixed {
+	background:rgba(255,255,255,0.8);
+	width:100%;
+}
+
+header.fixed .inner {
+    background: none;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header.fixed .header-nav {
+	color:#000;
+}
+
+header.fixed .fixed_logo {
+	display:block;
+}
+
+header.fixed .normal_logo {
+	display:none;
+}
+
 .logo{
     display:inline-block;
 }
