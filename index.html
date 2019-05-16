@@ -142,16 +142,16 @@
     </div>
     <script>
 
-		if($.browser.mobile == true) {
-			location.href = "m/index.html";
-		}
+		// if($.browser.mobile == true) {
+		// 	location.href = "m/index.html";
+		// }
         
         $(document).ready(function(){
-            // $(window).resize(function(){
-            //     if($(window).width() < 1024){
-            //         location.href = "m/index.html";
-            //     }   
-            // });
+            $(window).resize(function(){
+                if($(window).width() < 1024){
+                    location.href = "m/index.html";
+                }   
+            });
 
             var header = $( 'header' );
             var jbOffset = header.offset();

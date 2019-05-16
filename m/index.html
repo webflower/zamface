@@ -200,16 +200,16 @@
         </footer>    
     </div>
     <script>
-		if($.browser.mobile == false) {
-			location.href = "../index.html";
-		}
+		// if($.browser.mobile == false) {
+		// 	location.href = "../index.html";
+		// }
 		
 		$( document ).ready( function() {
-			// $(window).resize(function(){
-            //     if($(window).width() >= 1024){
-            //         location.href = "../index.html";
-            //     }   
-            // });
+			$(window).resize(function(){
+                if($(window).width() >= 1024){
+                    location.href = "../index.html";
+                }   
+            });
 
 			var header = $( 'header' );
 			var appdown = $("#appdown-wrap");
